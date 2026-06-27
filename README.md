@@ -1,49 +1,70 @@
-# Projeto: Website Institucional - Agência Criativa Web
+# Agência Criativa Web
 
-Este projeto consiste no desenvolvimento de uma página web única (Single Page Application) para uma agência de design digital fictícia chamada **Agência Criativa Web**. O objetivo principal foi aplicar na prática conceitos fundamentais de desenvolvimento front-end, focando em semântica estrutural e técnicas modernas de estilização responsiva.
+Site institucional de uma agência digital, desenvolvido com HTML5 e CSS3 puro, sem frameworks externos.
 
-Projeto desenvolvido para fins acadêmicos como parte dos critérios de avaliação da disciplina de Desenvolvimento Web / Design Responsivo.
+## 📁 Estrutura do Projeto
 
----
+```
+Agencia--Criativa--Web/
+├── img/
+│   └── escritorio.jpg
+├── index.html
+└── styles.css
+```
 
-## 🚀 Tecnologias Utilizadas
+## 🖥️ Seções da Página
 
-* HTML5: Estruturação semântica da página (uso de tags como `<header>`, `<nav>`, `<section>`, `<footer>`).
-* CSS3: Estilização global, gerenciamento de layouts e tipografia.
-* Flexbox: Utilizado para alinhar os itens do menu de navegação e organizar os blocos de depoimentos.
-* CSS Grid: Utilizado especificamente na seção de "Serviços" para criar uma grade adaptável de cards.
+- **Home (Banner):** Apresentação principal com chamada para ação.
+- **Sobre Nós:** Descrição da agência e seu diferencial.
+- **Serviços:** Grade com três cards — Design Gráfico, Desenvolvimento Web e Branding.
+- **Depoimentos:** Avaliações de clientes em cards destacados.
+- **Contato:** Informações da agência, imagem responsiva e formulário de contato.
+- **Rodapé:** Copyright 2026.
 
----
+## 🛠️ Tecnologias Utilizadas
 
-## 📐 Conceitos de Responsividade Aplicados
+- **HTML5** — Estrutura semântica com seções, header, footer e formulário.
+- **CSS3** — Estilização completa com:
+  - **Flexbox** — Cabeçalho, depoimentos e seção de contato.
+  - **CSS Grid** — Grade de serviços (3 colunas no desktop, 1 no mobile).
+  - **Media Queries** — Layout responsivo para telas até 768px.
+  - **Imagem Responsiva** — Atributo `srcset` e `sizes` para diferentes resoluções (568w, 768w, 1440w).
 
-Para cumprir as exigências de um design moderno e totalmente adaptável a qualquer tamanho de tela (Desktops, Tablets e Smartphones), foram implementadas as seguintes soluções:
+## 🎨 Identidade Visual
 
-1.  Unidades Relativas: Substituição do uso rígido de pixels (`px`) por unidades flexíveis como `%, vh, rem` e `fr` (no CSS Grid), garantindo a elasticidade dos elementos.
-2.  Media Queries (`@media`): Criação de pontos de quebra (breakpoints) em `768px` para reorganizar o layout de colunas lado a lado (Desktop) para um formato empilhado em linha única (Mobile).
-3.  Otimização de Imagens (`srcset` e `sizes`): Implementação de imagens responsivas no bloco de Contato. O navegador baixa o arquivo correto (`escritorio-p.jpg`, `escritorio-m.jpg` ou `escritorio-g.jpg`) dependendo da resolução e densidade de pixels do dispositivo do usuário, economizando largura de banda.
+| Elemento | Cor |
+|---|---|
+| Primária (roxo) | `#8e44ad` |
+| Secundária (azul escuro) | `#2c3e50` |
+| Background corpo | `#f9f9f9` |
+| Background serviços/contato | `#f4f6f7` |
+| Botão enviar | `#2c3e50` |
 
----
+Fonte principal: `'Segoe UI'`, Tahoma, Geneva, Verdana, sans-serif.
 
-## 🗂️ Estrutura do Projeto
+## 📱 Responsividade
 
-O site foi dividido estritamente nas seções requisitadas:
-* Home: Banner de boas-vindas com chamada para ação (Call to Action).
-* Sobre Nós: Breve descrição dos valores e objetivos da agência.
-* Serviços: Grid responsivo listando as principais soluções da empresa.
-* Depoimentos: Seção flexível contendo feedbacks de clientes.
-* Contato: Bloco com informações institucionais, imagem otimizada e um formulário funcional com campos de validação básica (Nome, E-mail e Mensagem).
+O layout se adapta automaticamente para dispositivos móveis (`max-width: 768px`):
 
----
+- Cabeçalho empilha logo e menu verticalmente.
+- Grade de serviços passa de 3 colunas para 1 coluna.
+- Depoimentos e seção de contato mudam de row para column.
+- Título do banner reduz de `3rem` para `2.2rem`.
 
-## ⚙️ Como Executar o Projeto Localmente
+## 📞 Informações de Contato (Demonstração)
 
-1. Faça o download ou clone este repositório.
-2. Certifique-se de manter a estrutura de pastas abaixo:
-   ```text
-   ├── img/
-   │   ├── escritorio-p.jpg
-   │   ├── escritorio-m.jpg
-   │   └── escritorio-g.jpg
-   ├── index.html
-   └── styles.css
+- **Endereço:** Av. Paulista, 1000 — São Paulo, SP
+- **Telefone:** (11) 98899-6503
+- **E-mail:** jconceicaogabriel@gmail.com
+
+## 🚀 Como Executar
+
+1. Clone ou baixe o repositório.
+2. Abra o arquivo `index.html` diretamente no navegador, **ou**
+3. Use a extensão **Live Server** do VS Code para visualização com recarregamento automático.
+
+> Nenhuma dependência ou instalação necessária.
+
+## 📄 Licença
+
+© 2026 Agência Criativa Web. Todos os direitos reservados.
